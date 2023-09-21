@@ -90,6 +90,55 @@
         <title>CeloBank</title>
     </head>
     <body>
-        <h1>Hello</h1>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- logo -->
+                    <a href="#">
+                        <img src="./assets/icon/logo.svg" alt="" />
+                    </a>
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link active">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Products</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Features </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Action -->
+                    <div class="header__action">
+                        <a href="#!" class="header__action-login">Log in</a>
+                        <a href="#!" class="header__action__signup btn">
+                            Sign Up</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main style="height: 15000px"></main>
+        <script>
+            document.addEventListener("scroll", function () {
+                var header = document.querySelector(".header");
+                var scrollPosition = window.scrollY;
+
+                // Điều kiện kiểm tra khi nào nên thêm/xóa lớp 'scrolled'
+                if (scrollPosition > 100) {
+                    // Ví dụ, nếu cuộn xuống 100px thì thêm lớp
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        </script>
     </body>
 </html>
