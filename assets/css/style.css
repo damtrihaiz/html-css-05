@@ -527,16 +527,21 @@ a {
     column-gap: 130px;
 }
 
+.payment__row.bottom {
+    margin-top: 160px;
+}
+
 .payment__content {
     width: 470px;
 }
 
-.payment__img-wrap {
-    display: flex;
-    align-items: center;
-    position: relative;
+.payment__media {
     width: 570px;
-    height: 425px;
+    flex-shrink: 0;
+}
+
+.payment__img-wrap {
+    position: relative;
 }
 
 .payment__desc {
@@ -574,13 +579,12 @@ a {
 
 .payment__img {
     display: block;
-    margin-right: auto;
     width: 482px;
 }
 
 .payment__send {
     position: absolute;
-    top: 0;
+    top: -48px;
     right: 0;
 
     display: flex;
@@ -645,7 +649,7 @@ a {
 
 .payment__income {
     position: absolute;
-    bottom: 0;
+    bottom: -55px;
     right: 0;
     width: 120px;
     height: 120px;
@@ -677,4 +681,88 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: normal;
+}
+
+.payment__wrap-bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 470px;
+}
+
+.payment__wrap-bottom::before {
+    content: url(/assets/icon/payment-bg.svg);
+    position: absolute;
+    width: 100%;
+    height: 72%;
+    bottom: -1px;
+    z-index: -1;
+}
+
+.payment__img-bottom {
+    width: 413px;
+    display: block;
+}
+
+.payment__wrap-card {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    padding: 28px;
+    width: 281px;
+    height: 220px;
+    background: #fff;
+    box-shadow: 0px 44px 48px 0px #0000001a;
+    border-radius: 4px;
+}
+
+.payment__wrap-heading {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.payment-method__list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.payment-method__link,
+.payment__method-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+.payment__method-add {
+    outline: none;
+    border: none;
+    background: #f9ea63;
+}
+
+.payment__method-add:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.payment__wrap-circle {
+    position: absolute;
+    bottom: 222px;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 999px;
+    background: var(--second-color);
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.1);
 }
