@@ -105,13 +105,17 @@
                                 <a href="#" class="navbar__link active">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#" class="navbar__link">Products</a>
+                                <a href="#product" class="navbar__link"
+                                    >Products</a
+                                >
                             </li>
                             <li class="navbar__item">
-                                <a href="#" class="navbar__link">Features </a>
+                                <a href="#feature" class="navbar__link"
+                                    >Features
+                                </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#" class="navbar__link">Blog</a>
+                                <a href="#blog" class="navbar__link">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -125,7 +129,7 @@
                 </div>
             </div>
         </header>
-        <main style="height: 15000px">
+        <main>
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
@@ -304,7 +308,7 @@
                 </div>
             </section>
             <!-- Payment -->
-            <section class="payment">
+            <section id="product" class="payment">
                 <div class="container">
                     <!-- Row 1 -->
                     <div class="payment__row">
@@ -320,11 +324,17 @@
                                 send payouts globally. We are the best platform.
                             </p>
                             <ul class="payment__list">
-                                <li class="payment__item">Global Payments</li>
-                                <li class="payment__item">
-                                    One-Click Purchase
+                                <li>
+                                    <a class="payment__item">Global Payments</a>
                                 </li>
-                                <li class="payment__item">Friendly Price</li>
+                                <li>
+                                    <a class="payment__item"
+                                        >One-Click Purchase</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="payment__item">Friendly Price</a>
+                                </li>
                             </ul>
                             <button class="payment__cta btn">
                                 Get Started
@@ -473,12 +483,18 @@
                                 send payouts globally. We are the best platform.
                             </p>
                             <ul class="payment__list">
-                                <li class="payment__item">Powerfull App</li>
-                                <li class="payment__item">
-                                    Transparency And Speed
+                                <li>
+                                    <a class="payment__item">Powerfull App</a>
                                 </li>
-                                <li class="payment__item">
-                                    Multiple Use Capabilities
+                                <li>
+                                    <a class="payment__item"
+                                        >Transparency And Speed</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="payment__item"
+                                        >Multiple Use Capabilities</a
+                                    >
                                 </li>
                             </ul>
                             <button class="payment__cta btn">
@@ -489,7 +505,7 @@
                 </div>
             </section>
             <!-- Client -->
-            <section class="client">
+            <section id="feature" class="client">
                 <div class="container">
                     <!-- Client top -->
                     <div class="client__top">
@@ -643,7 +659,7 @@
                 </div>
             </section>
             <!-- Blog -->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <div class="blog__top">
                         <section class="blog__content">
@@ -760,6 +776,7 @@
             <section class="download">
                 <div class="container download__container">
                     <section class="download__inner">
+                        <!-- top -->
                         <div class="download__top">
                             <p class="section__title download__title">
                                 Our App
@@ -772,6 +789,7 @@
                                 with a special online bank and move faster
                             </p>
                         </div>
+                        <!-- cta -->
                         <div class="download-cta">
                             <a class="download-cta__link">
                                 <img
@@ -810,6 +828,95 @@
                 </div>
             </section>
         </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- logo -->
+                    <a href="#">
+                        <img src="./assets/icon/logo.svg" alt="" />
+                    </a>
+                    <div class="footer__row">
+                        <!-- Column 1 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Sitemap</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link">About</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link">Growers</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link"
+                                        >Merchants</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link">Contact</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- Column 2 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Socials</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="" class="footer__link">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link">Linkedin</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link"
+                                        >Instagram</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="" class="footer__link">Twitter</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- Column 3 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Sitemap</h3>
+                            <p class="footer__desc section__desc">
+                                Xilliams Corner Wine © 2017. 1112 A Market St #
+                                Ste B22, Charlottesville, CA 45565
+                            </p>
+                            <p class="footer-form__title">News letter</p>
+                            <!-- Subscribe form -->
+                            <form action="" class="footer-form__subscribe">
+                                <input
+                                    type="email"
+                                    id=""
+                                    name=""
+                                    placeholder="Email address..."
+                                    class="footer-form__input"
+                                />
+                                <button
+                                    type="submit"
+                                    class="footer-form-submit"
+                                >
+                                    Subscribe
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="footer__contact">
+                    <span class="footer__email">email@gmail.com</span>
+                    <span class="footer__phone">(123)456-7890</span>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                © 2020 Light Media All rights reserved.
+            </div>
+        </footer>
         <script>
             document.addEventListener("scroll", function () {
                 var header = document.querySelector(".header");
