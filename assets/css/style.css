@@ -56,7 +56,8 @@ a {
 
 .btn:hover,
 .client-order,
-.blog-item__link {
+.blog-item__link,
+.download-cta__link {
     cursor: pointer;
     opacity: 0.9;
 }
@@ -493,7 +494,7 @@ a {
     width: 18px;
     height: 2px;
     margin-right: 12px;
-    background: var(--text-color);
+    background: currentColor;
 }
 
 .work__list {
@@ -919,7 +920,7 @@ a {
 }
 
 .blog__desc {
-    margin-top: 18px;
+    margin-top: 16px;
     color: #696d76;
     font-weight: 400;
     line-height: 1.75;
@@ -1000,4 +1001,69 @@ a {
     display: block;
     margin-top: 20px;
     line-height: 1.62;
+}
+
+/* ==================Our App=================== */
+
+.download {
+    margin-top: 160px;
+}
+
+.download__container {
+    padding: 49px 112px;
+    background: var(--second-color);
+    border-radius: 24px;
+}
+
+.download__inner {
+    position: relative;
+    padding: 51px;
+    text-align: center;
+}
+
+.download__top {
+    width: 435px;
+    margin: 0 auto;
+}
+
+.download__title {
+    color: #fff;
+    justify-content: center;
+}
+
+.download__heading {
+    color: #fff;
+}
+
+.download__desc {
+    color: #fff;
+}
+
+.download-cta {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.download__decor {
+    position: absolute;
+}
+
+.download__decor.top-left {
+    top: 0;
+    left: 0;
+}
+.download__decor.top-right {
+    top: 0;
+    right: 0;
+}
+.download__decor.bottom-left {
+    bottom: 0;
+    left: 54px;
+}
+.download__decor.bottom-right {
+    bottom: 0;
+    right: 54px;
 }
