@@ -87,6 +87,11 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Animations -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <title>CeloBank</title>
     </head>
     <body>
@@ -135,7 +140,12 @@
                 <div class="container">
                     <div class="hero__inner">
                         <!-- Hero content -->
-                        <section class="hero__content">
+                        <section
+                            data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                            class="hero__content"
+                        >
                             <p class="hero__title">Digital Smart Wallet</p>
                             <h1 class="hero__heading">
                                 Digital
@@ -145,7 +155,7 @@
                                 For Everyone.
                             </h1>
                             <p class="hero__desc section__desc">
-                                We bring together eveything that’s required to
+                                We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
@@ -176,9 +186,17 @@
                                     src="./assets/img/mobile-screen.png"
                                     alt=""
                                     class="hero__img"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="center-bottom"
+                                />
                                 />
                             </figure>
-                            <div class="hero__desposite">
+                            <div
+                                class="hero__desposite"
+                                data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000"
+                            >
                                 <img
                                     src="./assets/icon/hero-decor-1.svg"
                                     alt=""
@@ -190,7 +208,11 @@
                                     <span class="desposite-price">$32000</span>
                                 </div>
                             </div>
-                            <div class="hero__secured">
+                            <div
+                                data-aos="fade-up"
+                                data-aos-duration="2000"
+                                class="hero__secured"
+                            >
                                 <img
                                     src="./assets/icon/hero-decor-2.svg"
                                     alt=""
@@ -202,7 +224,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="hero__interest">
+                            <div
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="hero__interest"
+                            >
                                 <span class="hero__interest-percent">0%</span>
                                 <span class="hero__interest-label"
                                     >Interest</span
@@ -234,7 +261,12 @@
                                         />
                                     </div>
                                 </div>
-                                <div class="work__check">
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-duration="2000"
+                                    class="work__check"
+                                >
                                     <div class="work__check-square">
                                         <div class="work__check-circle">
                                             <svg
@@ -270,8 +302,16 @@
                             <h2 class="work__heading section__heading">
                                 How It Works
                             </h2>
-                            <ul class="work__list">
-                                <li class="work-item">
+                            <ul
+                                data-aos="fade-left"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine"
+                                class="work__list"
+                            >
+                                <li
+                                    data-aos-easing="ease-in-sine"
+                                    class="work-item"
+                                >
                                     <h3 class="work-item__heading">
                                         1. Open a High Interest Checking account
                                     </h3>
@@ -319,11 +359,17 @@
                                 One Card For All Your Payments
                             </h2>
                             <p class="section__desc payment__desc">
-                                We bring together eveything that’s required to
+                                We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
-                            <ul class="payment__list">
+                            <ul
+                                data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0"
+                                class="payment__list"
+                            >
                                 <li>
                                     <a class="payment__item">Global Payments</a>
                                 </li>
@@ -349,7 +395,12 @@
                                     class="payment__img"
                                 />
                                 <!-- Send money -->
-                                <div class="payment__send">
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="1000"
+                                    class="payment__send"
+                                >
                                     <div class="payment__send-left">
                                         <img
                                             src="./assets/icon/paper-plane.svg"
@@ -382,7 +433,12 @@
                                     </div>
                                 </div>
                                 <!-- Income -->
-                                <div class="payment__income">
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="1000"
+                                    class="payment__income"
+                                >
                                     <div class="payment__income-square">
                                         <img
                                             src="./assets/icon/income.svg"
@@ -407,7 +463,13 @@
                                     class="payment__img-bottom"
                                 />
                                 <!-- payment card -->
-                                <section class="payment__wrap-card">
+                                <section
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="top-center"
+                                    data-aos-offset="0"
+                                    data-aos-duration="1500"
+                                    class="payment__wrap-card"
+                                >
                                     <h3 class="payment__wrap-heading">
                                         Choose payment method:
                                     </h3>
@@ -478,11 +540,17 @@
                                 Transfer and Deposite Your Money Anytime
                             </h2>
                             <p class="section__desc payment__desc">
-                                We bring together eveything that’s required to
+                                We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
-                            <ul class="payment__list">
+                            <ul
+                                data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0"
+                                class="payment__list"
+                            >
                                 <li>
                                     <a class="payment__item">Powerfull App</a>
                                 </li>
@@ -523,7 +591,10 @@
                         <div class="client__list">
                             <!-- Item 1 -->
                             <div class="client-item">
-                                <div class="client-item__review">
+                                <div
+                                    data-aos="zoom-in-down"
+                                    class="client-item__review"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
@@ -545,7 +616,10 @@
                             </div>
                             <!-- Item 2 -->
                             <div class="client-item">
-                                <div class="client-item__review">
+                                <div
+                                    data-aos="zoom-in-down"
+                                    class="client-item__review"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
@@ -566,7 +640,10 @@
                             </div>
                             <!-- Item 3 -->
                             <div class="client-item">
-                                <div class="client-item__review">
+                                <div
+                                    data-aos="zoom-in-down"
+                                    class="client-item__review"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
@@ -587,7 +664,10 @@
                             </div>
                             <!-- Item 4 -->
                             <div class="client-item">
-                                <div class="client-item__review">
+                                <div
+                                    data-aos="zoom-in-down"
+                                    class="client-item__review"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
@@ -608,7 +688,10 @@
                             </div>
                             <!-- Item 5 -->
                             <div class="client-item">
-                                <div class="client-item__review">
+                                <div
+                                    data-aos="zoom-in-down"
+                                    class="client-item__review"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
@@ -629,7 +712,10 @@
                             </div>
                             <!-- Item 6 -->
                             <div class="client-item">
-                                <div class="client-item__review">
+                                <div
+                                    data-aos="zoom-in-down"
+                                    class="client-item__review"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
@@ -805,21 +891,37 @@
                             </a>
                         </div>
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="200"
                             src="./assets/icon/star20.svg"
                             alt=""
                             class="download__decor top-left"
                         />
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="200"
                             src="./assets/icon/star20.svg"
                             alt=""
                             class="download__decor top-right"
                         />
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="0"
                             src="./assets/icon/star20.svg"
                             alt=""
                             class="download__decor bottom-left"
                         />
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="0"
                             src="./assets/icon/star20.svg"
                             alt=""
                             class="download__decor bottom-right"
@@ -918,6 +1020,7 @@
             </div>
         </footer>
         <script>
+            // Scroll header
             document.addEventListener("scroll", function () {
                 var header = document.querySelector(".header");
                 var scrollPosition = window.scrollY;
@@ -930,6 +1033,19 @@
                     header.classList.remove("scrolled");
                 }
             });
+        </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            // // Add a delay for each element to create a sequential animation
+            // const elements = document.querySelectorAll("[data-aos]");
+            // elements.forEach((element, index) => {
+            //     setTimeout(() => {
+            //         element.setAttribute("data-aos", "fade-up");
+            //         AOS.refresh();
+            //     }, index * 1000); // Adjust the delay (1000ms = 1 second)
+            // });
         </script>
     </body>
 </html>
